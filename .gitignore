@@ -154,3 +154,10 @@ cython_debug/
 
 # Run logs
 runs/
+runs_*/
+
+# Pretrained models
+modelzoos/
+
+# Mmseg installation files
+mmseg/.mim/
