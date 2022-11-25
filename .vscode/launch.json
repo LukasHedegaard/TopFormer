@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Train iMaterialist",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/train.py",
+            "console": "integratedTerminal",
+            "args": [
+                "local_configs/topformer/topformer_small_512x512_20k_2x8_imaterialistfashion.py",
+                // "--gpus", "1",
+                "--work-dir",
+                "runs",
+            ]
+        },
+    ]
+}
