@@ -5,8 +5,8 @@ _base_ = [
     "./topformer_small_3classes.py",
 ]
 
-num_gpus = 1
-samples_per_gpu = 1
+num_gpus = 4
+samples_per_gpu = 8
 
 # By default, models are trained on 8 GPUs with 2 images per GPU.
 # Use linear scaling rule to compensate in case of deviations
