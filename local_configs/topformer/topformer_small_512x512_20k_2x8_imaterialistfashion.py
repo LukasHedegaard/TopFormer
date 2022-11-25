@@ -2,11 +2,11 @@ _base_ = [
     "../_base_/datasets/imaterialist_fashion.py",
     "../_base_/default_runtime.py",
     "../_base_/schedules/schedule_20k.py",
-    "./topformer_small_45classes.py",
+    "./topformer_small_46classes.py",
 ]
 
-num_gpus = 1
-samples_per_gpu = 2
+num_gpus = 4
+samples_per_gpu = 8
 
 # By default, models are trained on 8 GPUs with 2 images per GPU.
 # Use linear scaling rule to compensate in case of deviations
@@ -39,5 +39,5 @@ lr_config = dict(
 )
 
 
-data = dict(samples_per_gpu=samples_per_gpu)
+data = dict(samples_per_gpu=samples_per_gpu, workers_per_gpu=samples_per_gpu)
 find_unused_parameters = True
