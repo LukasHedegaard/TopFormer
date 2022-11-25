@@ -15,6 +15,7 @@ from .pascal_context import PascalContextDataset, PascalContextDataset59
 from .stare import STAREDataset
 from .voc import PascalVOCDataset
 from .imaterialist_fashion import IMaterialistFastionDataset
+from .imaterialist_fashion3 import IMaterialistFastion3Dataset
 
 __all__ = [
     'CustomDataset', 'build_dataloader', 'ConcatDataset', 'RepeatDataset',
@@ -23,4 +24,5 @@ __all__ = [
     'PascalContextDataset59', 'ChaseDB1Dataset', 'DRIVEDataset', 'HRFDataset',
     'STAREDataset', 'DarkZurichDataset', 'NightDrivingDataset',
     'COCOStuffDataset', 'LoveDADataset', 'IMaterialistFastionDataset',
+    'IMaterialistFastion3Dataset',
 ]
